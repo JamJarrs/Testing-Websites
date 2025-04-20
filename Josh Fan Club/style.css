@@ -1,5 +1,6 @@
 body {
     background-color: rgb(193, 237, 255);
+    text-align: center;
 }
 
 .heading {
@@ -21,4 +22,21 @@ body {
     border-style: solid;
     border-color: hotpink;
     border-radius: 100px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 10x;
+    font-size: 18px;
+    text-align: center;
+}
+
+ul {
+    background-color: black;
 }
