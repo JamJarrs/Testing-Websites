@@ -1,15 +1,34 @@
 body {
     background-color: rgb(193, 237, 255);
     text-align: center;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1em;
+}
+
+header {
+    background-image: url("images/background.jpg");
+    background-repeat: repeat;
+    background-position: center center;
+
 }
 
 .heading {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     border-style: solid;
     border-radius: 10px;
     background-color: rgb(150, 203, 233);
     padding: 10px;
-    margin: 10px;
+    width: 50%;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .this {
@@ -39,4 +58,19 @@ li a {
 
 ul {
     background-color: black;
+}
+
+.absolute {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 5px;
+}
+
+.absolute:hover {
+    transform: scale(1.5);
+    transform: matrix3d(5);
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
