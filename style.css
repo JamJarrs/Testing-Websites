@@ -6,6 +6,12 @@ body {
     padding: 0;
 }
 
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 p {
     font-size: 1em;
 }
@@ -43,21 +49,32 @@ header {
     border-radius: 100px;
 }
 
-li {
+nav ul {
     list-style-type: none;
-    display: inline;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blanchedalmond;
 }
 
-li a {
-    color: white;
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    padding: 12px 14px;
     text-decoration: none;
-    padding: 10x;
-    font-size: 18px;
+    color: black;
     text-align: center;
 }
 
-ul {
-    background-color: black;
+nav li a:hover {
+    background-color: orange;
+}
+
+nav .active {
+    background-color: orange;
 }
 
 .absolute {
@@ -73,4 +90,50 @@ ul {
     position: fixed;
     right: 10px;
     bottom: 10px;
+}
+
+.imageJosh {
+    grid-column: 4 / span 1;
+}
+
+.who {
+    border-style: solid;
+    border-color: black;
+    background-color: red;
+    margin: 20px;
+    grid-column: 1 / span 3;
+}
+
+.what {
+    border-style: solid;
+    border-color: black;
+    background-color: lightsalmon; 
+    margin: 20px;
+    grid-column: 2 / span 3;
+}
+
+.when {
+    border-style: solid;
+    border-color: black;
+    background-color: yellow; 
+    margin: 20px;
+    grid-column: 3 / span 2;
+}
+
+.where {
+    border-style: solid;
+    border-color: black;
+    background-color: green; 
+    margin: 20px;
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 2;
+    overflow: auto;
+}
+
+.why {
+    border-style: solid;
+    border-color: black;
+    background-color: purple; 
+    margin: 20px;
+    grid-row: 6;
 }
